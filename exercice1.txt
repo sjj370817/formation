@@ -1,0 +1,256 @@
+jeanj@DESKTOP-F0C9VO8 MINGW64 ~/OneDrive/Documents/intégration continue/test (master)
+$ git config --global user.name "Jean-jerome"
+
+jeanj@DESKTOP-F0C9VO8 MINGW64 ~/OneDrive/Documents/intégration continue/test (master)
+$ ^C
+
+jeanj@DESKTOP-F0C9VO8 MINGW64 ~/OneDrive/Documents/intégration continue/test (master)
+$ git config --global user.email "jean.josical@outlook.fr"
+
+jeanj@DESKTOP-F0C9VO8 MINGW64 ~/OneDrive/Documents/intégration continue/test (master)
+$ git init
+Initialized empty Git repository in C:/Users/jeanj/OneDrive/Documents/intégration continue/test/.git/
+
+jeanj@DESKTOP-F0C9VO8 MINGW64 ~/OneDrive/Documents/intégration continue/test (master)
+$ git add index.html
+
+jeanj@DESKTOP-F0C9VO8 MINGW64 ~/OneDrive/Documents/intégration continue/test (master)
+$ git commit -m "mon premier commit formation 25/10"
+[master (root-commit) 574db86] mon premier commit formation 25/10
+ 1 file changed, 1 insertion(+)
+ create mode 100644 index.html
+
+jeanj@DESKTOP-F0C9VO8 MINGW64 ~/OneDrive/Documents/intégration continue/test (master)
+$ git log
+commit 574db869e68f1c68f259dfaa41040deac4888ae4 (HEAD -> master)
+Author: Jean-jerome <jean.josical@outlook.fr>
+Date:   Tue Oct 25 10:26:28 2022 +0200
+
+    mon premier commit formation 25/10
+
+jeanj@DESKTOP-F0C9VO8 MINGW64 ~/OneDrive/Documents/intégration continue/test (master)
+$ git show
+commit 574db869e68f1c68f259dfaa41040deac4888ae4 (HEAD -> master)
+Author: Jean-jerome <jean.josical@outlook.fr>
+Date:   Tue Oct 25 10:26:28 2022 +0200
+
+    mon premier commit formation 25/10
+
+diff --git a/index.html b/index.html
+new file mode 100644
+index 0000000..b2d525b
+--- /dev/null
++++ b/index.html
+@@ -0,0 +1 @@
++index
+\ No newline at end of file
+
+jeanj@DESKTOP-F0C9VO8 MINGW64 ~/OneDrive/Documents/intégration continue/test (master)
+$ git branch -M main
+
+jeanj@DESKTOP-F0C9VO8 MINGW64 ~/OneDrive/Documents/intégration continue/test (main)
+$ git branch -M main https://github.com/sjj370817/formation.git
+fatal: 'https://github.com/sjj370817/formation.git' is not a valid branch name
+
+jeanj@DESKTOP-F0C9VO8 MINGW64 ~/OneDrive/Documents/intégration continue/test (main)
+$ git remote add origin https://github.com/sjj370817/formation.git
+
+jeanj@DESKTOP-F0C9VO8 MINGW64 ~/OneDrive/Documents/intégration continue/test (main)
+$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 236 bytes | 78.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/sjj370817/formation.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+jeanj@DESKTOP-F0C9VO8 MINGW64 ~/OneDrive/Documents/intégration continue/test (main)
+$ git add index.css
+
+jeanj@DESKTOP-F0C9VO8 MINGW64 ~/OneDrive/Documents/intégration continue/test (main)
+$ commit -m "mon second commit"
+bash: commit: command not found
+
+jeanj@DESKTOP-F0C9VO8 MINGW64 ~/OneDrive/Documents/intégration continue/test (main)
+$ git commit -m "mon second commit"
+[main 057a105] mon second commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 index.css
+
+jeanj@DESKTOP-F0C9VO8 MINGW64 ~/OneDrive/Documents/intégration continue/test (main)
+$ remote add origin https://github.com/sjj370817/formation.git
+bash: remote: command not found
+
+jeanj@DESKTOP-F0C9VO8 MINGW64 ~/OneDrive/Documents/intégration continue/test (main)
+$ remote add origin https://github.com/sjj370817/formation.git
+bash: remote: command not found
+
+jeanj@DESKTOP-F0C9VO8 MINGW64 ~/OneDrive/Documents/intégration continue/test (main)
+$ git remote add origin https://github.com/sjj370817/formation.git
+error: remote origin already exists.
+
+jeanj@DESKTOP-F0C9VO8 MINGW64 ~/OneDrive/Documents/intégration continue/test (main)
+$ git push -u orgin main
+fatal: 'orgin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+jeanj@DESKTOP-F0C9VO8 MINGW64 ~/OneDrive/Documents/intégration continue/test (main)
+$ git push -u
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 248 bytes | 248.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/sjj370817/formation.git
+   574db86..057a105  main -> main
+branch 'main' set up to track 'origin/main'.
+
+jeanj@DESKTOP-F0C9VO8 MINGW64 ~/OneDrive/Documents/intégration continue/test (main)
+$ git add index.js
+
+jeanj@DESKTOP-F0C9VO8 MINGW64 ~/OneDrive/Documents/intégration continue/test (main)
+$ git push -u
+Everything up-to-date
+branch 'main' set up to track 'origin/main'.
+
+jeanj@DESKTOP-F0C9VO8 MINGW64 ~/OneDrive/Documents/intégration continue/test (main)
+$ git branch -M main
+
+jeanj@DESKTOP-F0C9VO8 MINGW64 ~/OneDrive/Documents/intégration continue/test (main)
+$ git push -u
+Everything up-to-date
+branch 'main' set up to track 'origin/main'.
+
+jeanj@DESKTOP-F0C9VO8 MINGW64 ~/OneDrive/Documents/intégration continue/test (main)
+$ git commit -m "mon troisième commit"
+[main 509fbd8] mon troisième commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 index.js
+
+jeanj@DESKTOP-F0C9VO8 MINGW64 ~/OneDrive/Documents/intégration continue/test (main)
+$ git push -u
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 260 bytes | 130.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/sjj370817/formation.git
+   057a105..509fbd8  main -> main
+branch 'main' set up to track 'origin/main'.
+
+jeanj@DESKTOP-F0C9VO8 MINGW64 ~/OneDrive/Documents/intégration continue/test (main)
+$ git add .
+
+jeanj@DESKTOP-F0C9VO8 MINGW64 ~/OneDrive/Documents/intégration continue/test (main)
+$ git commit -M "ma première modification de l'index.html"
+error: unknown switch `M'
+usage: git commit [<options>] [--] <pathspec>...
+
+    -q, --quiet           suppress summary after successful commit
+    -v, --verbose         show diff in commit message template
+
+Commit message options
+    -F, --file <file>     read message from file
+    --author <author>     override author for commit
+    --date <date>         override date for commit
+    -m, --message <message>
+                          commit message
+    -c, --reedit-message <commit>
+                          reuse and edit message from specified commit
+    -C, --reuse-message <commit>
+                          reuse message from specified commit
+    --fixup [(amend|reword):]commit
+                          use autosquash formatted message to fixup or amend/reword specified commit
+    --squash <commit>     use autosquash formatted message to squash specified commit
+    --reset-author        the commit is authored by me now (used with -C/-c/--amend)
+    --trailer <trailer>   add custom trailer(s)
+    -s, --signoff         add a Signed-off-by trailer
+    -t, --template <file>
+                          use specified template file
+    -e, --edit            force edit of commit
+    --cleanup <mode>      how to strip spaces and #comments from message
+    --status              include status in commit message template
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+
+Commit contents options
+    -a, --all             commit all changed files
+    -i, --include         add specified files to index for commit
+    --interactive         interactively add files
+    -p, --patch           interactively add changes
+    -o, --only            commit only specified files
+    -n, --no-verify       bypass pre-commit and commit-msg hooks
+    --dry-run             show what would be committed
+    --short               show status concisely
+    --branch              show branch information
+    --ahead-behind        compute full ahead/behind values
+    --porcelain           machine-readable output
+    --long                show status in long format (default)
+    -z, --null            terminate entries with NUL
+    --amend               amend previous commit
+    --no-post-rewrite     bypass post-rewrite hook
+    -u, --untracked-files[=<mode>]
+                          show untracked files, optional modes: all, normal, no. (Default: all)
+    --pathspec-from-file <file>
+                          read pathspec from file
+    --pathspec-file-nul   with --pathspec-from-file, pathspec elements are separated with NUL character
+
+
+jeanj@DESKTOP-F0C9VO8 MINGW64 ~/OneDrive/Documents/intégration continue/test (main)
+$ git commit -m "ma première modification de l'index.html"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+jeanj@DESKTOP-F0C9VO8 MINGW64 ~/OneDrive/Documents/intégration continue/test (main)
+$ git add .
+
+jeanj@DESKTOP-F0C9VO8 MINGW64 ~/OneDrive/Documents/intégration continue/test (main)
+$ git commit -m "ma première modification de l'index.html"
+[main 518a8e3] ma première modification de l'index.html
+ 1 file changed, 11 insertions(+), 1 deletion(-)
+
+jeanj@DESKTOP-F0C9VO8 MINGW64 ~/OneDrive/Documents/intégration continue/test (main)
+$ git log
+commit 518a8e3e48023b2e79bad1065f64a1128e8fe346 (HEAD -> main)
+Author: Jean-jerome <jean.josical@outlook.fr>
+Date:   Tue Oct 25 12:02:21 2022 +0200
+
+    ma première modification de l'index.html
+
+commit 509fbd869a149f7800b8d869a615dd940823bd07 (origin/main)
+Author: Jean-jerome <jean.josical@outlook.fr>
+Date:   Tue Oct 25 10:54:40 2022 +0200
+
+    mon troisième commit
+
+commit 057a105da254dcd0b7c489c63348ebff2685d0fd
+Author: Jean-jerome <jean.josical@outlook.fr>
+Date:   Tue Oct 25 10:47:41 2022 +0200
+
+    mon second commit
+
+commit 574db869e68f1c68f259dfaa41040deac4888ae4
+Author: Jean-jerome <jean.josical@outlook.fr>
+Date:   Tue Oct 25 10:26:28 2022 +0200
+
+    mon premier commit formation 25/10
+
+jeanj@DESKTOP-F0C9VO8 MINGW64 ~/OneDrive/Documents/intégration continue/test (main)
+$ git push -u origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 471 bytes | 235.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/sjj370817/formation.git
+   509fbd8..518a8e3  main -> main
+branch 'main' set up to track 'origin/main'.
